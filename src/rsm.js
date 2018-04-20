@@ -6,8 +6,8 @@ export default function (JXT) {
     const Utils = JXT.utils;
 
     const First = JXT.define({
-      name: 'first',
-      namespace: _xmppConstants.Namespace.RSM,
+      name: 'oFirst',
+      namespace: NS.RSM,
       element: 'first',
       fields: {
         value: Utils.text(),
@@ -16,8 +16,8 @@ export default function (JXT) {
     });
 
     const Last = JXT.define({
-      name: 'last',
-      namespace: _xmppConstants.Namespace.RSM,
+      name: 'oLast',
+      namespace: NS.RSM,
       element: 'last',
       fields: {
         value: Utils.text(),
@@ -51,8 +51,8 @@ export default function (JXT) {
             index: Utils.numberSub(NS.RSM, 'index', false),
             last: Utils.textSub(NS.RSM, 'last'),
             max: Utils.numberSub(NS.RSM, 'max', false),
-            oFirst: Utils.subAttribute(_xmppConstants.Namespace.RSM, First),
-            oLast: Utils.subAttribute(_xmppConstants.Namespace.RSM, Last)
+            oFirst: Utils.subAttribute(NS.RSM, First),
+            oLast: Utils.subAttribute(NS.RSM, Last)
         }
     });
 }
