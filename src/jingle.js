@@ -40,6 +40,7 @@ export default function (JXT) {
             initiator: Utils.attribute('initiator'),
             responder: Utils.attribute('responder'),
             sid: Utils.attribute('sid'),
+            cid: Utils.textSub(NS.JINGLE_1, 'cid'),
             info: {
                 get: function () {
 
