@@ -37,6 +37,7 @@ export default function (JXT) {
         element: 'jingle',
         fields: {
             action: Utils.attribute('action'),
+            reinviteInitiator: Utils.attribute('reinvite-initiator'),
             initiator: Utils.attribute('initiator'),
             responder: Utils.attribute('responder'),
             sid: Utils.attribute('sid'),
